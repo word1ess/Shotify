@@ -836,6 +836,15 @@ body {
   .section {
     padding: 50px 0px;
   }
+  .intro__price-btn {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #252422;
+  }
+  .table-slide {
+    max-width: 75px;
+  }
   .intro h1 {
     font-size: 42px;
     margin-bottom: 20px;
@@ -851,9 +860,10 @@ body {
   .intro__price {
     width: 300px;
   }
-  .table-row {
+  .table-row,
+  .table-header {
     grid-template-columns: 75px repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
   }
   .table .title,
   .table-title h2 {
