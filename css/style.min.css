@@ -364,6 +364,9 @@ body *:after {
   line-height: 130%;
   text-transform: uppercase;
 }
+.wrapper .intro__count span.hidden {
+  display: none;
+}
 .wrapper .intro .btn {
   margin-bottom: 30px;
 }
