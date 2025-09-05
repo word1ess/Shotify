@@ -1034,6 +1034,10 @@ body *:after {
 .wrapper .intro-page__swiper .swiper-slide.swiper-slide-active {
   scale: 1.3;
 }
+.wrapper .how-works__item p {
+  font-size: 18px;
+  line-height: 1.3;
+}
 .wrapper .product-photography .swiper-slide {
   border-radius: 30px;
   overflow: hidden;
@@ -1106,6 +1110,10 @@ body *:after {
 .wrapper .block-with-product-swimwear .swiper-slide {
   border-radius: 30px;
   overflow: hidden;
+}
+.wrapper .block-with-hat .swiper-slide p,
+.wrapper .block-with-product-beauty-product .swiper-slide p {
+  bottom: 20px;
 }
 
 .wrapper .footer {
