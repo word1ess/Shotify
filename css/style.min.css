@@ -160,6 +160,10 @@ body *:after {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.lg-image {
+  background: #fff;
+}
+
 .wrapper {
   z-index: 1;
 }
