@@ -252,12 +252,17 @@ body *:after {
 .wrapper .block-header .btn-green {
   max-width: 260px;
 }
+.wrapper .block-header .btn,
+.wrapper .block-header .btn-green {
+  margin-top: 20px;
+}
 .wrapper .block-header.center {
   text-align: center;
 }
 .wrapper .block-header.center .btn,
 .wrapper .block-header.center .btn-green {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wrapper .block-with-product {
   background: #f9f9f9;
