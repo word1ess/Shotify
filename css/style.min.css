@@ -419,6 +419,64 @@ body *:after {
   font-size: 16px;
   margin-bottom: 15px;
 }
+.wrapper .block-products {
+  padding: 40px 0px;
+}
+.wrapper .block-products .block-header h2 {
+  margin-bottom: 15px;
+}
+.wrapper .block-products .block-header p {
+  color: #888;
+}
+.wrapper .block-products__row {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.wrapper .block-products__item {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.wrapper .block-products__item.grid-cards__card {
+  padding: 24px;
+}
+.wrapper .block-products__item h3 {
+  min-height: 48px;
+}
+.wrapper .block-products__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+}
+.wrapper .block-products__item p {
+  color: #888888;
+  margin-bottom: 24px;
+}
+.wrapper .block-products__item a {
+  display: flex;
+  gap: 8px;
+  position: relative;
+  align-items: center;
+  max-width: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  color: #9cc21f;
+  margin-top: auto;
+}
+.wrapper .block-products__item a::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  background: center/contain no-repeat url("../img/svgicons/slide.svg");
+  rotate: -90deg;
+}
 .wrapper .btn {
   font-weight: 500;
   font-size: 16px;
@@ -1018,6 +1076,15 @@ body *:after {
 .wrapper .faq ul li b {
   color: #252422;
 }
+.wrapper .find.find-products .circled {
+  position: relative;
+  z-index: 2;
+}
+.wrapper .find.find-products .circled::after {
+  inset: -7px -6px -5px -6px;
+  overflow: visible;
+  background: center/cover no-repeat url(../img/svgicons/circle-2.svg);
+}
 .wrapper .find .decorated {
   position: relative;
 }
@@ -1033,11 +1100,25 @@ body *:after {
   z-index: 2;
 }
 .wrapper .find .circled::after {
-  content: url("../img/svgicons/circle-1.svg");
+  content: "";
   position: absolute;
-  top: 0px;
-  left: -8px;
+  inset: 0px 4px 0px 4px;
   z-index: 1;
+  background: center/cover no-repeat url(../img/svgicons/circle-1.svg);
+}
+.wrapper .find .marked {
+  position: relative;
+}
+.wrapper .find .marked::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: 1;
+  background: center/cover no-repeat url(../img/mannequin/product-prepatation/counter.svg);
+}
+.wrapper .find .marked span {
+  position: relative;
+  z-index: 2;
 }
 .wrapper .find .block-header h2 {
   margin-bottom: 20px;
@@ -1172,6 +1253,39 @@ body *:after {
 .wrapper .block-with-hat .swiper-slide p,
 .wrapper .block-with-product-beauty-product .swiper-slide p {
   bottom: 20px;
+}
+.wrapper .fixed-nav {
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 10;
+  border-radius: 100px;
+  min-width: max-content;
+  padding: 10px;
+  backdrop-filter: blur(50px);
+  background: rgba(176, 176, 192, 0.3);
+}
+.wrapper .fixed-nav a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 116%;
+  color: #252422;
+  padding: 20px;
+  transition: all 300ms ease;
+}
+.wrapper .fixed-nav a:hover {
+  opacity: 0.6;
+}
+.wrapper .fixed-nav a.active {
+  background: #252422;
+  border-radius: 100px;
+  color: #fff;
+}
+.wrapper .fixed-nav a.active:hover {
+  opacity: 1;
 }
 
 .wrapper .footer {
@@ -1521,7 +1635,7 @@ body:has(.wrapper) {
     font-size: 20px;
   }
   .wrapper .find .circled::after {
-    content: url(../img/svgicons/circle-1-mobile.svg);
+    background-image: url(../img/svgicons/circle-1-mobile.svg);
   }
   .wrapper .footer {
     padding: 40px 15px 20px;
@@ -1696,5 +1810,31 @@ body:has(.wrapper) {
   }
   .wrapper .buttons {
     max-width: 100%;
+  }
+  .wrapper .fixed-nav a {
+    font-size: 16px;
+    min-width: fit-content;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .wrapper .fixed-nav {
+    min-width: auto;
+    left: 15px;
+    right: 15px;
+    transform: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .wrapper .block-products .block-header h2 {
+    font-size: 24px;
+  }
+  .wrapper .block-products__row {
+    grid-template-columns: repeat(4, calc(75vw - 30px));
+  }
+  .wrapper .find-products h2 span.decorated {
+    display: inline-block;
   }
 }
