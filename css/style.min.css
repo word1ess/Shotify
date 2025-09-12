@@ -445,6 +445,7 @@ body *:after {
   line-height: 1.3;
 }
 .wrapper .block-products__item.grid-cards__card {
+  background: #fff;
   padding: 24px;
 }
 .wrapper .block-products__item h3 {
@@ -473,7 +474,7 @@ body *:after {
   font-size: 16px;
   color: #11b82d;
   background: none;
-  margin-top: auto;
+  margin: auto auto 0px;
 }
 .wrapper .block-products__item button::after {
   content: "";
@@ -490,6 +491,8 @@ body *:after {
   position: relative;
   margin-top: -80px;
   max-width: 100%;
+  background: #f9f9f9;
+  padding-bottom: 20px;
 }
 .wrapper .fixed-nav-container .block-products:last-child {
   margin-bottom: 60px;
@@ -831,6 +834,9 @@ body *:after {
 }
 .wrapper .table {
   background: #f0eff9;
+}
+.wrapper .table:has(.table-contact:first-child) {
+  background: #f9f9f9;
 }
 .wrapper .table__row {
   border-radius: 15px;
