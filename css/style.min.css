@@ -511,7 +511,7 @@ body *:after {
   line-height: 116%;
   color: #252422;
   padding: 20px;
-  transition: all 300ms ease;
+  transition: opacity 300ms ease;
 }
 .wrapper .fixed-nav a:hover {
   opacity: 0.6;
