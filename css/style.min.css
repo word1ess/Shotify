@@ -429,7 +429,7 @@ body *:after {
 }
 .wrapper .block-products .block-header p {
   color: rgb(149, 148, 148);
-  font-size: 20px;
+  font-size: 16px;
 }
 .wrapper .block-products__row {
   display: grid;
@@ -448,7 +448,7 @@ body *:after {
   padding: 24px;
 }
 .wrapper .block-products__item h3 {
-  font-size: 24px;
+  font-size: 20px;
   min-height: 62px;
 }
 .wrapper .block-products__item img {
@@ -485,10 +485,6 @@ body *:after {
 }
 .wrapper .block-products__item:hover img {
   scale: 1.05;
-}
-.wrapper .block-products.block-products-shoe h3 {
-  margin-bottom: 0px;
-  min-height: 87px;
 }
 .wrapper .fixed-nav-container {
   position: relative;
@@ -1243,6 +1239,9 @@ body *:after {
 .wrapper .intro-page__swiper .swiper-buttons {
   justify-content: center;
   margin-top: 40px;
+}
+.wrapper .intro-page.product-photography-services .block-header p {
+  color: rgb(149, 148, 148);
 }
 .wrapper .how-works__item p {
   font-size: 18px;
