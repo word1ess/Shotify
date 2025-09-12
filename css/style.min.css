@@ -428,11 +428,12 @@ body *:after {
   margin-bottom: 15px;
 }
 .wrapper .block-products .block-header p {
-  color: #888;
+  color: rgb(149, 148, 148);
+  font-size: 20px;
 }
 .wrapper .block-products__row {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: space-between;
   overflow-x: auto;
@@ -447,19 +448,22 @@ body *:after {
   padding: 24px;
 }
 .wrapper .block-products__item h3 {
-  min-height: 48px;
+  font-size: 24px;
+  min-height: 62px;
 }
 .wrapper .block-products__item img {
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
   margin-bottom: 24px;
+  transition: all 300ms ease;
 }
 .wrapper .block-products__item p {
-  color: #888888;
+  color: rgb(149, 148, 148);
   margin-bottom: 24px;
+  font-size: 14px;
 }
-.wrapper .block-products__item a {
+.wrapper .block-products__item button {
   display: flex;
   gap: 8px;
   position: relative;
@@ -468,15 +472,23 @@ body *:after {
   font-weight: 400;
   font-size: 16px;
   color: #11b82d;
+  background: none;
   margin-top: auto;
 }
-.wrapper .block-products__item a::after {
+.wrapper .block-products__item button::after {
   content: "";
   display: block;
   width: 12px;
   height: 12px;
   flex: 0 0 12px;
   background: center/contain no-repeat url("../img/svgicons/product-arrow.svg");
+}
+.wrapper .block-products__item:hover img {
+  scale: 1.05;
+}
+.wrapper .block-products.block-products-shoe h3 {
+  margin-bottom: 0px;
+  min-height: 87px;
 }
 .wrapper .fixed-nav-container {
   position: relative;
