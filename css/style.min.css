@@ -427,6 +427,9 @@ body *:after {
 .wrapper .block-products .block-header h2 {
   margin-bottom: 15px;
 }
+.wrapper .block-products .block-header h2 span {
+  color: rgb(149, 148, 148);
+}
 .wrapper .block-products .block-header p {
   color: rgb(149, 148, 148);
   font-size: 16px;
@@ -450,7 +453,6 @@ body *:after {
 }
 .wrapper .block-products__item h3 {
   font-size: 20px;
-  min-height: 62px;
 }
 .wrapper .block-products__item img {
   display: block;
@@ -472,7 +474,7 @@ body *:after {
   max-width: fit-content;
   font-weight: 400;
   font-size: 16px;
-  color: #11b82d;
+  color: #f60;
   background: none;
   margin: auto auto 0px;
 }
@@ -486,9 +488,6 @@ body *:after {
 }
 .wrapper .block-products__item:hover img {
   scale: 1.05;
-}
-.wrapper .block-products.block-products-beauty h3 {
-  min-height: fit-content;
 }
 .wrapper .fixed-nav-container {
   position: relative;
@@ -1428,9 +1427,6 @@ body:has(.wrapper) {
     flex: 0 0 530px;
     max-width: 530px;
   }
-  .wrapper .block-products.block-products-beauty h3 {
-    min-height: 62px;
-  }
 }
 @media only screen and (max-width: 992px) {
   .wrapper .header {
@@ -1886,5 +1882,15 @@ body:has(.wrapper) {
   }
   .wrapper .find-products h2 span.decorated {
     display: inline-block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .wrapper .block-products.block-products-shoe h3, .wrapper .block-products.block-products-other h3 {
+    min-height: 52px;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .wrapper .block-products.block-products-amazon h3, .wrapper .block-products.block-products-clothing h3 {
+    min-height: 52px;
   }
 }
