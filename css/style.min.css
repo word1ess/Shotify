@@ -1866,8 +1866,14 @@ body:has(.wrapper) {
   .wrapper .block-products .block-header h2 {
     font-size: 24px;
   }
+  .wrapper .block-products .block-header p {
+    font-size: 16px;
+  }
   .wrapper .block-products__row {
     grid-template-columns: repeat(4, calc(75vw - 30px));
+  }
+  .wrapper .block-products.block-products-shoe .block-products__row {
+    grid-template-columns: repeat(3, calc(75vw - 30px));
   }
   .wrapper .find-products h2 span.decorated {
     display: inline-block;
