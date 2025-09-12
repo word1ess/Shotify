@@ -487,6 +487,9 @@ body *:after {
 .wrapper .block-products__item:hover img {
   scale: 1.05;
 }
+.wrapper .block-products.block-products-beauty h3 {
+  min-height: fit-content;
+}
 .wrapper .fixed-nav-container {
   position: relative;
   margin-top: -80px;
@@ -1425,6 +1428,9 @@ body:has(.wrapper) {
     flex: 0 0 530px;
     max-width: 530px;
   }
+  .wrapper .block-products.block-products-beauty h3 {
+    min-height: 62px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .wrapper .header {
@@ -1866,8 +1872,6 @@ body:has(.wrapper) {
     max-width: calc(100vw - 30px);
     top: calc(100vh - 80px);
   }
-}
-@media only screen and (max-width: 450px) {
   .wrapper .block-products .block-header h2 {
     font-size: 24px;
   }
