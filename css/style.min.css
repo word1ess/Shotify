@@ -275,6 +275,9 @@ body *:after {
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper .block-header.center .buttons {
+  margin: 0 auto;
+}
 .wrapper .block-with-product {
   background: #f9f9f9;
 }
@@ -1434,6 +1437,11 @@ body *:after {
   overflow: visible;
   background: center/cover no-repeat url(../img/svgicons/circle-2.svg);
 }
+.wrapper .find.find-3d .block-header p {
+  font-size: 20px;
+  color: #4b4b4b;
+  font-weight: 400;
+}
 .wrapper .find .decorated {
   position: relative;
 }
@@ -1549,6 +1557,9 @@ body *:after {
 }
 .wrapper .intro-page.product-photography-services .block-header p {
   color: rgb(149, 148, 148);
+}
+.wrapper .intro-page.ai {
+  padding-bottom: 0px;
 }
 .wrapper .intro-page__spline {
   position: relative;
@@ -1688,6 +1699,21 @@ body *:after {
 .wrapper .block-galleries__item img {
   display: block;
   width: 100%;
+}
+.wrapper .block-galleries__item label {
+  position: absolute;
+  inset: auto auto 24px 50%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #252422;
+  border-radius: 37px;
+  padding: 5px 16px;
+  background: rgba(255, 255, 255, 0.9);
+  max-width: max-content;
+  min-width: max-content;
+  transform: translate(-50%, 0%);
 }
 
 .wrapper .footer {
