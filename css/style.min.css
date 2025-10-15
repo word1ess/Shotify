@@ -164,6 +164,10 @@ body *:after {
   background: #fff;
 }
 
+.lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {
+  width: 100% !important;
+}
+
 .wrapper {
   z-index: 1;
   /* HTML: <div class="loader"></div> */
