@@ -164,8 +164,8 @@ body *:after {
   background: #fff;
 }
 
-.lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {
-  width: 100% !important;
+.lg-video-cont {
+  height: auto !important;
 }
 
 .wrapper {
