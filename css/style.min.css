@@ -676,6 +676,9 @@ body *:after {
   cursor: pointer;
   position: relative;
 }
+.wrapper .block-cases__img.block-with-video img:last-child {
+  opacity: 1;
+}
 .wrapper .block-cases__img:hover img:last-child {
   opacity: 1;
 }
@@ -1118,6 +1121,13 @@ body *:after {
 }
 .wrapper .table:has(.table-contact:first-child) {
   background: #f9f9f9;
+}
+.wrapper .table.table-3d .table-contact .circled::after {
+  content: "";
+  background: center/contain no-repeat url("../img/svgicons/circle-5.svg");
+  inset: -10px -20px;
+  left: 0px;
+  transform: translate(-10px, 0px);
 }
 .wrapper .table__row {
   border-radius: 15px;
@@ -2243,6 +2253,10 @@ body:has(.wrapper) {
   .wrapper .block-with-product .container:has(.with-clothes) {
     justify-content: center;
   }
+  .wrapper .block-with-product.block-with-ai span.title,
+  .wrapper .block-with-product.block-with-ai span.title + p {
+    display: none;
+  }
   .wrapper .block-with-product__header {
     order: 1;
   }
@@ -2254,10 +2268,6 @@ body:has(.wrapper) {
   }
   .wrapper .block-with-product__info b {
     font-size: inherit;
-  }
-  .wrapper .block-with-product__info span.title,
-  .wrapper .block-with-product__info span.title + p {
-    display: none;
   }
   .wrapper .block-with-product__image {
     order: 2;
@@ -2324,6 +2334,11 @@ body:has(.wrapper) {
   .wrapper .block-cases__case h3 {
     font-size: 24px;
   }
+  .wrapper .block-cases__img.block-with-video img:last-child {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+  }
   .wrapper .block-with-video.square {
     aspect-ratio: 308/530;
   }
@@ -2379,6 +2394,9 @@ body:has(.wrapper) {
   }
   .wrapper .block-galleries__item.square > img {
     object-fit: cover;
+  }
+  .wrapper .find.find-3d .block-header p {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 576px) {
