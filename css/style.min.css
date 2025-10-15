@@ -1762,7 +1762,6 @@ body *:after {
 .wrapper .block-product-spline__spline {
   position: relative;
   width: 100%;
-  max-width: 890px;
   aspect-ratio: 890/533;
   margin: 0 auto;
 }
