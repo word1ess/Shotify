@@ -166,6 +166,7 @@ body *:after {
 
 .wrapper {
   z-index: 1;
+  /* HTML: <div class="loader"></div> */
 }
 .wrapper .circled {
   position: relative;
@@ -874,6 +875,35 @@ body *:after {
   border-radius: 15px;
   padding: 40px 24px;
   background: #f8f7f9;
+}
+.wrapper .loader {
+  width: 40px;
+  aspect-ratio: 1;
+  animation: l2-1 4s infinite linear, l2-2 2s infinite steps(1) alternate;
+}
+@keyframes l2-1 {
+  0% {
+    transform: perspective(150px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(150px) rotateY(360deg);
+  }
+}
+@keyframes l2-2 {
+  0% {
+    background: #5e00ff;
+  }
+  50% {
+    background: #2ecc71;
+  }
+}
+@keyframes l2-3 {
+  0% {
+    left: -5px;
+  }
+  100% {
+    left: 85%;
+  }
 }
 
 .wrapper .header {
@@ -1735,6 +1765,16 @@ body *:after {
   max-width: 890px;
   aspect-ratio: 890/533;
   margin: 0 auto;
+}
+.wrapper .block-product-spline__spin {
+  max-width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+.wrapper .block-product-spline__spin img {
+  position: absolute;
+  z-index: 3;
+  animation: l2-3 2s infinite ease-in-out alternate;
 }
 
 .wrapper .footer {
