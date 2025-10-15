@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.80/build/spline-viewer.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/slidetoggle@4.0.0/dist/slidetoggle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js"></script> -->
@@ -72,7 +73,7 @@
 </header>
 
             <main class="content">
-                <section class="intro-page 3d section">
+                <section class="intro-page three-d section">
                     <div class="container">
                         <header class="block-header center">
                             <h1>
@@ -91,7 +92,7 @@
                         </header>
                     </div>
                 </section>
-                <section class="block-with-product block-with-3d centered section">
+                <section class="block-with-product block-with-three-d centered section">
                     <div class="container">
                         <header class="block-with-product__header">
                             <h2>
@@ -120,6 +121,17 @@
                                             muted
                                             poster="./files/videos/products/placeholder-1.png"
                                             src="./files/videos/products/1.webm"
+                                        ></video>
+                                        <button>
+                                            <img src="img/svgicons/play-button.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide block-with-video _block-with-video">
+                                        <video
+                                            autoplay
+                                            loop
+                                            muted
+                                            src="./files/videos/products/1-1.webm"
                                         ></video>
                                         <button>
                                             <img src="img/svgicons/play-button.svg" alt="">
@@ -164,7 +176,7 @@
                         </footer>
                     </div>
                 </section>
-                <section class="block-with-product block-with-3d reverse centered section">
+                <section class="block-with-product block-with-three-d reverse centered section">
                     <div class="container">
                         <header class="block-with-product__header">
                             <h2>
@@ -273,7 +285,7 @@
                                             loop
                                             muted
                                             poster="./files/videos/galleries/1/placeholder-2.png"
-                                            src="./files/videos/galleries/1/3.webm"
+                                            src="./files/videos/galleries/1/2.webm"
                                         ></video>
                                         <button>
                                             <img src="img/svgicons/play-button.svg" alt="">
@@ -313,13 +325,7 @@
                                         <img src="img/videos/galleries/1/7.jpg" alt="">
                                     </div>
                                     <div class="swiper-slide block-galleries__item block-with-video _block-with-video">
-                                        <video
-                                            autoplay
-                                            loop
-                                            muted
-                                            poster="./files/videos/galleries/1/placeholder-2.png"
-                                            src="./files/videos/galleries/1/2.webm"
-                                        ></video>
+                                        <video poster="./files/videos/galleries/1/placeholder-2.png" src="./files/videos/galleries/1/2.webm"></video>
                                         <button>
                                             <img src="img/svgicons/play-button.svg" alt="">
                                         </button>
@@ -348,6 +354,7 @@
                             <main class="block-galleries__gallery">
                                 <div class="block-galleries__row">
                                     <div class="block-galleries__item">
+                                        <label>AI</label>
                                         <img src="img/videos/galleries/2/18.png" alt="">
                                     </div>
                                     <div class="block-galleries__item">
@@ -359,6 +366,7 @@
                                         <img src="img/videos/galleries/2/10.jpg" alt="">
                                     </div>
                                     <div class="block-galleries__item">
+                                        <label>AI</label>
                                         <img src="img/videos/galleries/2/20.png" alt="">
                                     </div>
                                 </div>
