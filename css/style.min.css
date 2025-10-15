@@ -2253,7 +2253,9 @@ body:has(.wrapper) {
   .wrapper .block-with-product .container:has(.with-clothes) {
     justify-content: center;
   }
-  .wrapper .block-with-product.block-with-ai span.title,
+  .wrapper .block-with-product span.title {
+    display: none;
+  }
   .wrapper .block-with-product.block-with-ai span.title + p {
     display: none;
   }
@@ -2305,6 +2307,9 @@ body:has(.wrapper) {
   .wrapper .block-with-product__footer p:last-child {
     max-width: 120px;
     text-align: right;
+  }
+  .wrapper .block-product-spline__spline {
+    aspect-ratio: 4/6;
   }
   .wrapper .product-prepatation__item::before {
     font-size: 24px;
