@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/2a5b09ec-0201-4848-95bd-ecffc74bb545/Final_16x9.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20251015%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20251015T055954Z&X-Amz-Expires=86400&X-Amz-Signature=6419e4b272f1ff32d94a2af4be1c2afdaf301abbdc8ed8d0f195813711ff0c16&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Final_16x9.webm%22&response-content-type=video%2Fwebm&x-id=GetObject
