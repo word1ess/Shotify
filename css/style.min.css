@@ -3415,6 +3415,16 @@ body:has(.wrapper) {
   .wrapper .content.main .intro-main__text > p {
     font-size: 16px;
   }
+  .wrapper .content.main .intro-main__text .btn-purple {
+    max-width: 200px;
+  }
+  .wrapper .content.main .intro-main__text .circled {
+    margin-left: 5px;
+  }
+  .wrapper .content.main .intro-main__text .circled::after {
+    background: center/contain no-repeat url(../img/svgicons/circle-6-mobile.svg);
+    inset: -6px -2px -6px -8px;
+  }
   .wrapper .content.main .intro-main__images {
     display: grid;
     flex: 1 1 100%;
