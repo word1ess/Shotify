@@ -17,7 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/slidetoggle@4.0.0/dist/slidetoggle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
@@ -302,29 +301,19 @@
                             </header>
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="img/main/products/3/1.png" data-fancybox="gallery-products-1">
-                                            <img src="img/main/products/3/1.png" alt="">
-                                        </a>
-                                        <a href="img/main/products/3/2.png" data-fancybox="gallery-products-1">
-                                            <img src="img/main/products/3/2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/main/products/3/3.png" data-fancybox="gallery-products-1">
-                                            <img src="img/main/products/3/3.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/main/products/3/4.png" data-fancybox="gallery-products-1">
-                                            <img src="img/main/products/3/4.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/main/products/3/4.png" data-fancybox="gallery-products-1">
-                                            <img src="img/main/products/3/4.png" alt="">
-                                        </a>
-                                    </div>
+                                    <a href="img/main/products/3/1.png" data-fancybox="gallery-products-1" class="swiper-slide">
+                                        <img src="img/main/products/3/1.png" alt="">
+                                        <a href=""></a>
+                                    </a>
+                                    <a href="img/main/products/3/3.png" data-fancybox="gallery-products-1" class="swiper-slide">
+                                        <img src="img/main/products/3/3.png" alt="">
+                                    </a>
+                                    <a href="img/main/products/3/4.png" data-fancybox="gallery-products-1" class="swiper-slide">
+                                        <img src="img/main/products/3/4.png" alt="">
+                                    </a>
+                                    <a href="img/main/products/3/4.png" data-fancybox="gallery-products-1" class="swiper-slide">
+                                        <img src="img/main/products/3/4.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-buttons">
                                     <div class="swiper-button-prev"></div>
@@ -339,24 +328,18 @@
                             </header>
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a data-fancybox="gallery-products-2" href="img/main/products/4/1.png">
-                                            <img src="img/main/products/4/1.png" alt="">
-                                        </a>
-                                        <a data-fancybox="gallery-products-2" href="img/main/products/4/2.png">
-                                            <img src="img/main/products/4/2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a data-fancybox="gallery-products-2" href="img/main/products/4/3.png">
-                                            <img src="img/main/products/4/3.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a data-fancybox="gallery-products-2" href="img/main/products/4/4.png">
-                                            <img src="img/main/products/4/4.png" alt="">
-                                        </a>
-                                    </div>
+                                    <a href="img/main/products/4/1.png" data-fancybox="gallery-products-2" class="swiper-slide">
+                                        <img src="img/main/products/4/1.png" alt="">
+                                    </a>
+                                    <a href="img/main/products/4/3.png" data-fancybox="gallery-products-2" class="swiper-slide">
+                                        <img src="img/main/products/4/3.png" alt="">
+                                    </a>
+                                    <a href="img/main/products/4/4.png" data-fancybox="gallery-products-2" class="swiper-slide">
+                                        <img src="img/main/products/4/4.png" alt="">
+                                    </a>
+                                    <a href="img/main/products/4/4.png" data-fancybox="gallery-products-2" class="swiper-slide">
+                                        <img src="img/main/products/4/4.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="swiper-buttons">
                                     <div class="swiper-button-prev"></div>
@@ -369,7 +352,7 @@
                         </a>
                     </div>
                 </section>
-                <section class="block-product-spline main grey-bg">
+                <section class="block-product-video main grey-bg">
                     <div class="container">
                         <header class="block-header">
                             <h2>3d product modeling</h2>
@@ -381,13 +364,19 @@
                                 <a href="#" class="btn-purple">Learn more</a>
                             </div>
                         </header>
-                        <main class="block-product-spline__spline">
-                            <div class="block-product-spline__spin">
-                                <div class="loader"></div>
-                                <img src="img/svgicons/cursor.svg" alt="">
-                            </div>
-                            <spline-viewer url="https://prod.spline.design/CGgMM9aZxLZl6J8O/scene.splinecode"></spline-viewer>
-                        </main>
+                        <div class="block-with-video _block-with-video">
+                            <video
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                preload
+                                src="./files/3d/intro/1.webm"
+                            ></video>
+                            <button>
+                                <img src="img/svgicons/play-button.svg" alt="">
+                            </button>
+                        </div>
                         <a href="#" class="btn-purple">Learn more</a>
                     </div>
                 </section>
