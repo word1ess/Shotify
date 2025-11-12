@@ -2008,6 +2008,10 @@ body *:after {
 .wrapper .block-product-video.main .block-header .buttons .btn-green {
   margin-top: 0px;
 }
+.wrapper .block-product-video.main video {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .wrapper .intro-main .container {
   display: flex;
   gap: 30px;
@@ -2261,7 +2265,7 @@ body *:after {
 .wrapper .brands-marquee__marquee {
   display: flex;
   width: max-content;
-  animation: scroll 18s linear infinite;
+  animation: scroll 25s linear infinite;
   gap: 15px;
 }
 .wrapper .brands-marquee__marquee img {
