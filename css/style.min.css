@@ -168,26 +168,6 @@ body *:after {
   height: auto !important;
 }
 
-.f-panzoom__wrapper {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.f-panzoom__viewport {
-  max-width: 100%;
-  width: 100% !important;
-  height: auto !important;
-  transform: none !important;
-}
-
-.f-panzoom__viewport > .f-panzoom__content {
-  object-fit: contain;
-}
-
-img.f-panzoom__content {
-  width: 100%;
-}
-
 .wrapper {
   z-index: 1;
   /* HTML: <div class="loader"></div> */
@@ -2028,13 +2008,6 @@ img.f-panzoom__content {
 .wrapper .block-product-video.main .block-header .buttons .btn-green {
   margin-top: 0px;
 }
-.wrapper .block-product-video.main .block-header .buttons a:last-child {
-  display: none;
-}
-.wrapper .block-product-video.main .container > a {
-  max-width: 260px;
-  margin-top: 30px;
-}
 .wrapper .intro-main .container {
   display: flex;
   gap: 30px;
@@ -2288,8 +2261,13 @@ img.f-panzoom__content {
 .wrapper .brands-marquee__marquee {
   display: flex;
   width: max-content;
-  animation: scroll 15s linear infinite;
+  animation: scroll 18s linear infinite;
   gap: 15px;
+}
+.wrapper .brands-marquee__marquee img {
+  width: 160px;
+  max-width: 160px;
+  object-fit: contain;
 }
 .wrapper .brands-marquee.brands-marquee-why {
   padding: 40px 0px;
@@ -2707,9 +2685,6 @@ body:has(.wrapper) {
 }
 .wrapper .content.main .block-products-index .block-header p {
   font-size: 20px;
-}
-.wrapper .content.main .block-products-index .block-header .buttons a:last-child {
-  display: none;
 }
 .wrapper .content.main .block-products-index:has(.block-products__row.broken) .block-header {
   margin-bottom: 40px;
@@ -3895,6 +3870,22 @@ body:has(.wrapper) {
   }
 }
 @media only screen and (max-width: 576px) {
+  .f-panzoom__wrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .f-panzoom__viewport {
+    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+  .f-panzoom__viewport > .f-panzoom__content {
+    object-fit: contain;
+  }
+  img.f-panzoom__content {
+    width: 100%;
+  }
   .wrapper .fixed-nav {
     min-width: auto;
     left: 15px;
