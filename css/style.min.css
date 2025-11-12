@@ -2011,6 +2011,15 @@ body *:after {
 .wrapper .block-product-video.main video {
   max-width: 1000px;
   margin: 0 auto;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  background: #005bff;
+  width: 6px;
+  height: 6px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 .wrapper .intro-main .container {
   display: flex;
@@ -3668,7 +3677,7 @@ body:has(.wrapper) {
     max-width: 80px;
   }
   .wrapper .content.main .brands-marquee__marquee {
-    animation-duration: 10s;
+    animation-duration: 6s;
   }
   .wrapper .content.main .what__row {
     grid-template-columns: 1fr;
