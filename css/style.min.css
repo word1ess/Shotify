@@ -814,19 +814,12 @@ body *:after {
 .wrapper .block-products-index.ai .block-header:first-child {
   margin-bottom: 40px;
 }
-.wrapper .block-products-index .block-products__row {
-  overflow: hidden;
+.wrapper .block-products-index.ai .block-products__row .swiper-slide:not(:first-child) img {
+  aspect-ratio: 310/460;
 }
-.wrapper .block-products-index .block-products__row .swiper {
-  padding: 20px 0px;
-}
-.wrapper .block-products-index .block-products__item {
-  padding: 0px;
-}
-.wrapper .block-products-index .block-products__item img {
-  aspect-ratio: auto;
-  margin-bottom: 0px;
-  box-shadow: 2px 2px 4px 2px #e9e9ea;
+.wrapper .block-products-index.ai .block-products__row .swiper-slide:not(:first-child) video {
+  aspect-ratio: 310/460;
+  object-fit: cover;
 }
 .wrapper .block-products-index:has(.block-products__row.broken) .swiper-slide {
   max-width: 310px;
@@ -846,6 +839,12 @@ body *:after {
   font-size: 32px;
   color: #252422;
 }
+.wrapper .block-products-index:has(.block-products__row.broken) .block-products__row .swiper-slide:first-child img {
+  aspect-ratio: auto;
+  object-fit: none;
+  width: auto;
+  box-shadow: none;
+}
 .wrapper .block-products-index:has(.block-products__row.broken) .block-products__row.on-model .swiper-slide:first-child {
   padding-right: 71px;
 }
@@ -854,6 +853,28 @@ body *:after {
 }
 .wrapper .block-products-index .container > .btn-purple {
   max-width: 260px;
+}
+.wrapper .block-products-index .block-products__row {
+  overflow: hidden;
+}
+.wrapper .block-products-index .block-products__row .swiper {
+  padding: 20px 0px;
+}
+.wrapper .block-products-index .block-products__row .swiper-slide {
+  padding: 0px;
+}
+.wrapper .block-products-index .block-products__row img {
+  display: block;
+  aspect-ratio: 311/359;
+  margin-bottom: 0px;
+  box-shadow: 2px 2px 4px 2px #e9e9ea;
+  width: 100%;
+}
+.wrapper .block-products-index .block-products__row video {
+  aspect-ratio: 311/359;
+}
+.wrapper .block-products-index__item {
+  padding: 0px;
 }
 .wrapper .block-selling {
   padding: 60px 0px;
@@ -2764,16 +2785,6 @@ body:has(.wrapper) {
     flex: 0 0 530px;
     max-width: 530px;
     min-width: 530px;
-  }
-}
-@media only screen and (min-width: 1300px) {
-  .wrapper:has(.content.main) + .fancybox__dialog .f-panzoom__viewport img.f-panzoom__content {
-    scale: 1.8;
-  }
-}
-@media only screen and (min-width: 1100px) {
-  .wrapper:has(.content.main) + .fancybox__dialog .f-panzoom__viewport img.f-panzoom__content {
-    scale: 1.35;
   }
 }
 @media only screen and (max-width: 992px) {
