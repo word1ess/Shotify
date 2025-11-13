@@ -2270,7 +2270,7 @@ body *:after {
 .wrapper .brands-marquee__marquee {
   display: flex;
   width: max-content;
-  animation: scroll 25s linear infinite;
+  animation: scroll 35s linear infinite;
   gap: 15px;
 }
 .wrapper .brands-marquee__marquee img {
@@ -2768,12 +2768,12 @@ body:has(.wrapper) {
 }
 @media only screen and (min-width: 1300px) {
   .wrapper:has(.content.main) + .fancybox__dialog .f-panzoom__viewport img.f-panzoom__content {
-    scale: 1.4;
+    scale: 1.8;
   }
 }
 @media only screen and (min-width: 1100px) {
   .wrapper:has(.content.main) + .fancybox__dialog .f-panzoom__viewport img.f-panzoom__content {
-    scale: 1.25;
+    scale: 1.35;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -3683,7 +3683,7 @@ body:has(.wrapper) {
     max-width: 120px;
   }
   .wrapper .content.main .brands-marquee__marquee {
-    animation-duration: 25s;
+    animation-duration: 35s;
   }
   .wrapper .content.main .what__row {
     grid-template-columns: 1fr;
