@@ -2293,7 +2293,7 @@ body *:after {
 .wrapper .brands-marquee__marquee {
   display: flex;
   width: max-content;
-  animation: scroll 60s linear infinite;
+  animation: scroll 65s linear infinite;
   gap: 15px;
 }
 .wrapper .brands-marquee__marquee img {
@@ -3696,7 +3696,7 @@ body:has(.wrapper) {
     max-width: 120px;
   }
   .wrapper .content.main .brands-marquee__marquee {
-    animation-duration: 60s;
+    animation-duration: 65s;
   }
   .wrapper .content.main .what__row {
     grid-template-columns: 1fr;
