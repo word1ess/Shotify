@@ -841,8 +841,10 @@ body *:after {
 }
 .wrapper .block-products-index:has(.block-products__row.broken) .block-products__row .swiper-slide:first-child img {
   aspect-ratio: auto;
-  object-fit: none;
+  object-fit: contain;
   width: auto;
+  max-width: 500px;
+  aspect-ratio: 468/434;
   box-shadow: none;
 }
 .wrapper .block-products-index:has(.block-products__row.broken) .block-products__row.on-model .swiper-slide:first-child {
